@@ -35,19 +35,19 @@ public class P4_L337Sp34k3r {
 			//found the contains and replace functions and testing to see if viable
 			if(USS[i].contains("A")) {
 				USS[i] = USS[i].replace("A", "4");
-				//System.out.println(SS[i]);
+				
 			}	
 			 if(USS[i].contains("E")) {
 				USS[i] = USS[i].replace("E", "3");
-				//System.out.println(SS[i]);
+				
 			}
 			if(USS[i].contains("T")) {
 				USS[i] = USS[i].replace("T", "7");
-				//System.out.println(SS[i]);
+				
 			}
 			if(USS[i].contains("O")) {
 				USS[i] = USS[i].replace("O", "()");
-				//System.out.println(SS[i]);
+				
 			}
 				System.out.println(USS[i]);
 			

@@ -6,7 +6,6 @@ import java.util.Scanner;
 */
 
 
-//EVERYTHING WORKS EXCEPT THE FACT THAT I CANT GET THE LETTERS TO GO PERMA CAPITALIZED***
 public class P4_L337Sp34k3r {
 
 	public static void main(String[] args) {
@@ -16,40 +15,40 @@ public class P4_L337Sp34k3r {
 		// taking a line splitting it and putting it into a string array
 		//Print out all uppercase like asked 
 		
-		//I have no idea how to change the letters to numbers or symbols
 		System.out.println("Give me three words to make L334: ");
 		String input;
 		input = console.nextLine();
 
 		String[] SS = input.split("\\s+");
-		String[] USS = new String[3];
-		//Setting all letters in the split string to uppercase
-		for(int i = 0; i < SS.length; i++) {
-			SS[i].toUpperCase();
-			USS[i] = SS[i];
-		}
 		
-		
-		for (int i = 0; i < USS.length; i++) {
+		for (int i = 0; i < SS.length; i++) {
 		
 			//found the contains and replace functions and testing to see if viable
-			if(USS[i].contains("A")) {
-				USS[i] = USS[i].replace("A", "4");
-				
-			}	
-			 if(USS[i].contains("E")) {
-				USS[i] = USS[i].replace("E", "3");
-				
+			if(SS[i].contains("A")) {
+				SS[i] = SS[i].replace("A", "4");	
 			}
-			if(USS[i].contains("T")) {
-				USS[i] = USS[i].replace("T", "7");
-				
+			if(SS[i].contains("a")) {
+				SS[i] = SS[i].replace("a", "4");	
 			}
-			if(USS[i].contains("O")) {
-				USS[i] = USS[i].replace("O", "()");
-				
+			 if(SS[i].contains("E")) {
+				SS[i] = SS[i].replace("E", "3");
 			}
-				System.out.println(USS[i]);
+			 if(SS[i].contains("e")) {
+				SS[i] = SS[i].replace("e", "3");
+			}
+			if(SS[i].contains("T")) {
+				SS[i] = SS[i].replace("T", "7");
+			}
+			if(SS[i].contains("t")) {
+				SS[i] = SS[i].replace("t", "7");
+			}
+			if(SS[i].contains("O")) {
+				SS[i] = SS[i].replace("O", "()");
+			}
+			if(SS[i].contains("o")) {
+				SS[i] = SS[i].replace("o", "()");
+			}
+				System.out.println(SS[i]);
 			
 			
 	}

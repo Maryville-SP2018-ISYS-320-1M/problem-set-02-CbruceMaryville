@@ -8,7 +8,6 @@ public class P1_NumbersRightMethod {
 
 	public static void main(String[] args) {
 		drawNumbersRight(7);
-		triangleArea(8.0, 5.2, 7.1);
 	}
 
 	

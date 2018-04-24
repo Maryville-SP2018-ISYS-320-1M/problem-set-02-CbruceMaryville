@@ -4,7 +4,7 @@ import java.util.Scanner;
 	Name(s):Clayton Bruce
 	Date: 4/15/2018
 	Edited on : 4/23
-	Still confused
+	FIXED
 */
 
 public class P5_StairMaster {
@@ -22,19 +22,19 @@ public class P5_StairMaster {
 
 		width = console.nextInt();
 		
-		//Confused on how to get the number of spacers
-		System.out.println("Give me the number of spacers: ");
-		int NumOfSpacers;
-		
-		NumOfSpacers = console.nextInt();
 
-	
-		
+		//Could even add another variable to see the thickness of the stair
 		for(int row= 0; row <height; row++) {
-			PrintWall(height);
-			PrintSpace(NumOfSpacers, width);
+			PrintWall();
+			PrintSpace(row, width);
 			PrintStep(width);
 			System.out.println();
+			PrintWall();
+			PrintSpace(row, width);
+			PrintStep(width);
+			System.out.println();
+
+			
 			
 		}
 
@@ -43,7 +43,7 @@ public class P5_StairMaster {
 	public static void PrintStep(int width) {
 		for (int i = 0; i < width; i++) {
 			System.out.print("*");
-			System.out.print("*");
+			
 		}
 
 	}
@@ -52,17 +52,17 @@ public class P5_StairMaster {
 		for (int x = 0; x < NumOfSpacers; x++) {
 			for (int i = 0; i < width; i++) {
 				System.out.print(" ");
-				System.out.print(" ");
+				
 			}
 		}
 
 	}
 	//changing wall to || so see where they are showing up
-	public static void PrintWall(int numStair) {
-		for (int i = 0; i <= numStair; i++) {
+	public static void PrintWall() {
+		 
 			System.out.print("||");
-			//System.out.print("||");
-		}
+			
+		
 	}
 
 	
